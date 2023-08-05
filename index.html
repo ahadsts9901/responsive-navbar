@@ -26,19 +26,19 @@
         <img src="" alt="logo">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="https://github.com/ahadsts9901">Services</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
         </ul>
         <div class="dropdown">
-            <button class="drop-down-button"><h1 class="bi bi-three-dots-vertical dots"></h1></button>
+            <button class="drop-down-button"><h1 class="bi bi-list dots"></h1></button>
             <ul class="dropdown-menu">
                 <h1 class="bi bi-x-lg drop-down-close"></h1>
                 <h2>Ahad STS</h2>
                 <li class="list"><a href="#" class="drop-down-options">Home</a></li>
                 <li class="list"><a href="#" class="drop-down-options">Services</a></li>
-                <li class="list"><a href="#" class="drop-down-options">Gallery</a></li>
+                <li class="list"><a href="https://github.com/ahadsts9901" class="drop-down-options">Gallery</a></li>
                 <li class="list"><a href="#" class="drop-down-options">About</a></li>
                 <li class="list"><a href="#" class="drop-down-options">Contact</a></li>
                 <div class="iconContainer">
@@ -49,36 +49,25 @@
                 <div class="iconContainer">
                     <a class="bi bi-whatsapp" href="#"></a>
                     <a class="bi bi-youtube" href="#"></a>
-                    <a class="bi bi-linkedin" href="#"></a>
+                    <a class="bi bi-linkedin" href="https://github.com/ahadsts9901"></a>
                 </div>
             </ul>
         </div>
     </div>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
     <!-- javascript -->
-    <script src="./main.js"></script>
+    <script>
+        let burgerBtn = document.querySelector(".drop-down-button")
+        let crossBtn = document.querySelector(".drop-down-close")
+        let showDropContent = document.querySelector(".dropdown-menu")
+
+        burgerBtn.addEventListener('click', () => {
+            showDropContent.className = "drop-clicked"
+        })
+
+        crossBtn.addEventListener("click", () => {
+            showDropContent.className = "none"
+        })
+    </script>
 </body>
 
 </html>
