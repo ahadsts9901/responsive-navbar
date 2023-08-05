@@ -56,28 +56,53 @@ body {
     right: 1em;
 }
 
+.drop-down-close {
+    background-color: #11223300;
+    color: #fff;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 1.5em;
+    z-index: 20!important;
+}
+
 ul.dropdown-menu {
     padding: none!important;
     margin: none!important;
     display: none;
     z-index: 10;
     position: fixed;
-    top: 2.5em;
-    right: 2em;
+    top: 0;
+    right: 0;
+}
+
+ul.dropdown-menu>h2 {
+    color: #fff;
+    padding: 0em;
+    z-index: 40;
+    position: relative;
+    top: -0.2em;
+    right: 0em;
+    padding-left: 1em;
+}
+
+ul.dropdown-menu>button>h1 {
+    color: #fff;
+    /* padding: 1em 0em 1em 0em; */
 }
 
 .drop-down-button:hover~ul.dropdown-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: left;
     width: fit-content;
-    height: fit-content;
-    padding: 1em;
+    height: 100%;
+    padding: 2em;
+    padding-right: 3em;
     row-gap: 1em;
     background-color: #112233;
     margin: 0em!important;
-    margin-top: 2em!important;
 }
 
 ul.dropdown-menu>li {
@@ -134,6 +159,20 @@ ul.dropdown-menu>li>a {
 .navbar>ul>li>a {
     margin: 0em!important;
     color: #112233!important;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%!important;
+    height: fit-content;
+    gap: 1em;
+}
+
+.iconContainer>a {
+    color: #fff;
+    font-size: 1.3em;
 }
 
 @media only screen and (max-width:740px) {
